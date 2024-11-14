@@ -1,0 +1,170 @@
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    background-color:#d2ebe9;
+}
+header {
+    background-color: #0a9f90; 
+    padding: 10px 20px; 
+    font-size:xx-large;
+    font-family:italic,tahoma;
+    text-align: center;
+}
+a ul li {
+    display: inline;
+    margin-right: 20px;
+    background-color: blue;
+    text-align: center;
+  }
+  
+  nav a {
+    color: rgb(4, 4, 4);
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    padding: 20px;
+  }
+  
+  nav a:hover {
+    color: #0c33a8;
+    text-decoration: underline;
+  }
+
+
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: auto;
+    background-color: #3f0707;
+}
+
+.logo a {
+    font-size: 1.8rem; 
+    color: #ac3232;
+    text-decoration: none; 
+}
+
+.nav-links {
+    list-style: none; 
+    display: flex;
+    margin: 0; 
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px; 
+}
+
+.nav-links a {
+    color:black; 
+    text-decoration: none; 
+    font-size: 1rem; 
+    transition: color 0.3s; 
+    padding: 20px;
+}
+
+.about-us {
+max-width: 800px;
+margin: 20px auto;
+padding: 20px;
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 2px 10px rgba(0,0,0.1);
+}
+
+h1 {
+    font-size: medium;
+    text-decoration: #3B5998;
+}
+
+
+p {
+    font-size: larger;
+    text-decoration-color: black;
+}
+
+.social {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #3B5998; 
+    color: white;
+    text-decoration: none;
+
+}
+
+.social:hover {
+    background-color: black;
+}
+.footer {
+    padding: 10px ;
+  background-color: #b3c2c0;
+    color: rgb(10, 5, 5); 
+    text-align: center;
+    font-size: large;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.footer p{
+    font-size: larger;
+    font-weight: lighter;
+}
+.footer .footer-content {
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+    margin-bottom: 20px; 
+}
+
+.main-sponsor, .partners, .social-media {
+    flex: 1 1 30%;
+    margin: 10px;
+}
+
+.sponsor-logo {
+    width: 200px; 
+    height: auto; 
+}
+
+.partner-logos {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.partner-logo {
+    width: 100px; 
+    height: auto; 
+    margin: 10px; 
+    transition: transform 0.3s; 
+}
+
+.partner-logo:hover {
+    transform: scale(1.1); 
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-icon {
+    width: 40px;
+    height: auto; 
+    margin: 0 10px; 
+    transition: transform 0.3s;
+    text-align: center; 
+}
+
+.social-icon:hover {
+    transform: scale(1.1); 
+
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem; 
+}

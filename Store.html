@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Store.css">
+    <title>Deep Web Tech Com</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-links">
+            <a href="Home.html">Home</a>
+            <a href="About Us.html">About Us</a>
+            <a href="Services.html">Services</a>
+            <a href="Contact Us.html">Contact Us</a>
+            <a href="Bookings.html">Bookings</a>
+            <a href="Store.html">Store</a>
+            <a href="Payment.html">Payment</a>
+        </nav>
+    </header>
+            
+    <section class="product-gallery">
+        <h2>Welcome To Deep Web Tech: Com - Redefining Computers in Lesotho</h2>
+        <div class="brand-filter">
+            <h2>Shop by Brand</h2>
+            <button class="brand-button">
+                <a href="Intel.html"><img src="images/download (25).jpeg" alt="Intel Logo" class="button-image" width="200" height="100"></a>
+            </button>
+            <button class="brand-button">
+                <a href="Apple.html"><img src="images/download (22).jpeg" alt="Apple Logo" class="button-image" width="200" height="100"></a>
+            </button>
+            <button class="brand-button">
+                <a href="Asus.html"><img src="images/download (23).jpeg" alt="Asus Logo" class="button-image" width="200" height="100"></a>
+            </button>
+        </div>
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide"><img src="images/box.jpg" alt="image" width="150" height="400"></div>
+                <div class="slide"><img src="images/brand1.png" alt="image" width="150" height="400"></div>
+                <div class="slide"><img src="images/CPU.jpg" alt="image" width="150" height="400"></div>
+                <div class="slide"><img src="images/peri.png" alt="image" width="150" height="400"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cart">
+        <h3>Cart (<span id="cart-count">0</span>)</h3>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-footer">Total: M<span id="cart-total">0</span></div>
+    </div>
+
+    <div class="container">
+        <!-- Product listings -->
+        <div class="item">
+            <h2>Product 1</h2>
+            <img src="images/download (10).jpeg" alt="Product 1">
+            <h2>Asus</h2>
+            <p>Price: M14 000</p>
+            <button onclick="addToCart('Product 1', 14000)">Add to Cart</button>
+        </div>
+
+        <!-- Repeat similarly for Products 2 to 12 -->
+        <!-- Example for Product 2 -->
+        <div class="item">
+            <h2>Product 2</h2>
+            <img src="images/download (16).jpeg" alt="Product 2">
+            <h3>Cooling System</h3>
+            <p>Price: M15 000.00</p>
+            <button onclick="addToCart('Product 2', 15000)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <h2>Product 3</h2>
+            <img src="images/download (14).jpeg" alt="Product 3">
+            <h3>Custom Computer Box</h3>
+            <p> M20 000.00</p>
+            <button onclick="addToCart('Product 3', 20000)">Add to Cart</button>
+        </div>
+    
+        <div class="item">
+            <h2>Product 4</h2>
+            <img src="images/download (11).jpeg" alt="Product 4">
+            <h3>Computer Box</h3>
+            <p>M12 000.00</p>
+            <button onclick="addToCart('Product 4', 12000)">Add to Cart</button>
+        </div>
+    
+        <div class="item">
+        <h2>Product 5</h2>
+            <img src="images/download (12).jpeg" alt="Product 5">
+            <h3>Central Processing Unit</h3>
+            <p>M17 000.00</p>
+            <button onclick="addToCart('Product 5', 17000)">Add to Cart</button>
+        </div>
+    
+        <div class="item">
+            <h2>Product 6</h2>
+            <img src="images/download (20).jpeg" alt="Product 6">
+            <h3>Mouse</h3>
+            <p>M1000.00</p>
+            <button onclick="addToCart('Product 6', 1000)">Add to Cart</button>  
+        </div>
+    
+        <div class="item">
+            <h2>Product 7</h2>
+            <img src="images/download (21).jpeg" alt="Product 7"> 
+            <h3>Headset</h3>
+            <p>M5 000.00</p>
+            <button onclick="addToCart('Product 7', 5000)">Add to Cart</button>
+        </div>
+    
+        <div class="item">
+            <h2>Product 8</h2>
+            <img src="images/download (18).jpeg" alt="Product 8">
+            <h3>Monitor</h3>
+            <p>M26 000.00</p>
+            <button onclick="addToCart('Product 8', 26000)">Add to Cart</button>
+        </div>
+    
+        <div class="item">
+            <h2>Product 9</h2>
+            <img src="images/rm.webp" alt="Product 9">
+            <h3>Modem/router</h3>
+            <p>M6 000</p>
+            <button onclick="addToCart('Product 9', 6000)">Add to Cart</button>
+        </div>
+        
+        <div class="item">
+            <h2>Product 10</h2>
+            <img src="images/joystick.jpg" alt="Product 10">
+            <h3>Joystick</h3>
+            <p>M2 000.00</p>
+            <button onclick="addToCart('Product 10', 2000)">Add to Cart</button>
+        </div>
+    
+        <div class="item">
+            <h2>Product 11</h2>
+            <img src="images/im5.jfif.jpg" alt="Product 11">
+            <h3>Hp</h3>
+            <p>M15 000.00</p>
+            <button onclick="addToCart('Product 11', 15000)">Add to Cart</button>
+        </div>
+    
+        <div class="item">
+            <h2>Product 12</h2>
+            <img src="images/ops.jpeg" alt="Product 12">
+             <h3>Operating System</h3>
+            <p>M12 000.00</p>
+            <button onclick="addToCart('Product 12', 12000)">Add to Cart</button>
+        </div>
+        <!-- Add remaining products here... -->
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="partners">
+                <h3>Our Partners</h3>
+                <div class="partner-logos">
+                    <img src="images/Microsoft-Logo.wine.png" alt="Microsoft Logo" class="partner-logo">
+                    <img src="images/Xbox_logo.svg" alt="Xbox Logo" class="partner-logo">
+                    <img src="images/dell.png" alt="Dell Logo" class="partner-logo">
+                    <img src="images/playstation-3.svg" alt="PlayStation Logo" class="partner-logo">
+                    <img src="images/lenovo.png" alt="Lenovo Logo" class="partner-logo">
+                    <img src="images/hp.png" alt="HP Logo" class="partner-logo">
+                    <img src="images/amd.jpg" alt="AMD Logo" class="partner-logo">
+                </div>
+                <p>Our dedicated team is committed to connecting you to the future<br>
+                    keeping you ahead  of the curve with latest in computing<br>
+                technology. Whether you're a gaming enthusiast, professional in need of reliable hardware<br>
+            or simply seeking  tech-savvy advice. Explore our range of products and let us be your
+            in navigating the ever-evolving landscape of tech.</p>
+                
+            </div>
+            <div class="sections">
+                <h3>Follow Us</h3>
+                <p>Email us at <a href="mailto:someone@example.com">paballopule4@gmail.com</a></p>
+                <p><a href="https://wa.me/26662260503?text=hey">WhatsApp</a></p>
+                <img src="images/twitter.png" alt="Twitter" class="social-icon">
+                <img src="images/facebook.png" alt="Facebook" class="social-icon">
+                <img src="images/instagram.jpeg" alt="Instagram" class="social-icon">
+                <img src="images/YouTube.png" alt="YouTube" class="social-icon">
+                <img src="images/tiktok.webp" alt="TikTok" class="social-icon">
+                <img src="images/whatsapp.jpeg" alt="WhatsApp" class="social-icon">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>©2024 Deep Web Tech Com | All rights reserved | Terms of service</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize cart from localStorage or create an empty array
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        function updateCart() {
+            const cartCount = document.getElementById("cart-count");
+            const cartTotal = document.getElementById("cart-total");
+            let total = 0;
+
+            cart.forEach(item => {
+                total += item.price;
+            });
+
+            cartCount.innerText = cart.length;
+            cartTotal.innerText = total;
+            displayCartItems();
+        }
+
+        function displayCartItems() {
+            const cartItemsDiv = document.getElementById("cart-items");
+            cartItemsDiv.innerHTML = "";  // Clear current items
+
+            cart.forEach((item, index) => {
+                const itemDiv = document.createElement("div");
+                itemDiv.innerHTML = `${item.name} - M${item.price} 
+                                     <button onclick="removeFromCart(${index})">Remove</button>`;
+                cartItemsDiv.appendChild(itemDiv);
+            });
+        }
+
+        function addToCart(productName, productPrice) {
+            const item = { name: productName, price: productPrice };
+            cart.push(item);
+
+            // Save cart to localStorage
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            // Update cart
+            updateCart();
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+
+            // Update localStorage and cart display
+            localStorage.setItem("cart", JSON.stringify(cart));
+            updateCart();
+        }
+
+        // Initial cart setup on page load
+        updateCart();
+    </script>
+</body>
+</html>

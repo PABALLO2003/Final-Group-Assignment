@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Web Tech Com</title>
+    <style>
+        body {
+background-color: #d2ebe9; 
+    color: #131313; 
+    font-family: 'Arial', sans-serif;
+    margin: 20 px;
+    margin-left: 20px;
+    padding: 0;
+}
+
+header {
+    background-color: #0a9f90; 
+    padding: 10px ; 
+    font-size:xx-large;
+    font-family:italic,tahoma;
+    text-align: center;
+}
+
+.h1{
+    text-align: center;
+}
+a ul li {
+    display: inline;
+    margin-right: 20px;
+    background-color: blue;
+    text-align: center;
+  }
+  
+  nav a {
+    color: rgb(11, 11, 16);
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: auto;
+    background-color: #3f0707;
+}
+
+.logo a {
+    font-size: 1.8rem; 
+    color: #ac3232;
+    text-decoration: none; 
+}
+
+.nav-links {
+    list-style: none; 
+    display: flex;
+    margin: 0; 
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px; 
+}
+
+.nav-links a {
+    color: #ffffff; 
+    text-decoration: none; 
+    font-size: 1rem; 
+    transition: color 0.3s; 
+    padding: 20px;
+}
+.section{
+    padding: 20px;
+    margin: 20px;
+}
+.nav-links a:hover {
+    color: #0c33a8; 
+}
+
+.nav-actions {
+    display: flex; 
+}
+
+.nav-button {
+    background-color: #ffdd57; 
+    color: #ae4444; 
+    padding: 10px 15px;
+    border-radius: 25px; 
+    text-decoration: none; 
+    display: inline-block;
+    margin-left: 10px; 
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #2f158e; 
+}
+
+        .slider {
+            max-width: 1000px;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: calc(1000px * 6); 
+        }
+        .slides img {
+            width: 1000px;
+            height: 400px;
+        }
+        .navigation {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav-button {
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .footer {
+    padding: 10px ;
+  background-color: #b3c2c0; 
+    color: rgb(10, 5, 5); 
+    text-align: center;
+    font-size: large;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.footer p{
+    font-size: larger;
+}
+.footer .footer-content {
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+    margin-bottom: 20px; 
+}
+
+.main-sponsor, .partners, .social-media {
+    flex: 1 1 30%; 
+    margin: 10px;
+}
+
+.sponsor-logo {
+    width: 200px; 
+    height: auto; 
+}
+
+.partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partner-logo {
+    width: 100px; 
+    height: auto; 
+    margin: 10px; 
+    transition: transform 0.3s; 
+}
+
+.partner-logo:hover {
+    transform: scale(1.1); 
+}
+
+.social-media {
+    text-align: center; 
+}
+
+.social-icon {
+    width: 40px; 
+    height: auto; 
+    margin: 0 10px;
+    transition: transform 0.3s; 
+}
+
+.social-icon:hover {
+    transform: scale(1.1); 
+}
+
+.footer-bottom {
+    margin-top: 20px; 
+    font-size: 0.9rem; 
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Apple.html">Apple</a>
+            <a href="Asus.html">Asus</a>
+            <a href="Hp.html">Hp</a>
+            <a href="Lenovo.html">Lenovo</a>
+            <a href="Intel.html">Intel</a>
+            <a href="Dell.html">Dell</a>
+            <a href="Store.html">Store</a>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <img src="images/hp.jpg" alt="hps"> 
+            <img src="images/hard 2.jpeg" alt="hp">
+            <img src="images/hp3.webp" alt="hp">
+            <img src="images/hp4.avif" alt="hp">
+            <img src="images/hp5.webp" alt="hp">
+            <img src="images/hp6.jpg" alt="hp">
+            <img src="images/hp7.avif" alt="hp">
+        </div>
+        <div class="navigation">
+            <button class="nav-button" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="nav-button" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        function moveSlide(direction) {
+            const slides = document.querySelector('.slides');
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = slides.children.length - 1;
+            if (currentIndex >= slides.children.length) currentIndex = 0;
+            slides.style.transform = `translateX(-${currentIndex * 1000}px)`;
+        }
+    </script>
+    <footer class="footer">
+        <div class="footer-content">
+            
+            <div class="partners">
+                <h3>Our Partners</h3>
+                <div class="partner-logos">
+                    <img src="images/Microsoft-Logo.wine.png" alt="Microsoft-Logo.wine" class="partner-logo">
+                    <img src="images/Xbox_logo.svg" alt="Xbox_logo" class="partner-logo">
+                    <img src="images/dell.png" alt="dellvidia Logo" class="partner-logo">
+                    <img src="images/playstation-3.svg" alt="PlayStation-3" class="partner-logo">
+                    <img src="images/lenovo.png" alt="lenovo" class="partner-logo">
+                    <img src="images/hp.png" alt="hp" class="partner-logo">
+                    <img src="images/amd.jpg" alt="amd" class="partner-logo">
+                   
+    
+                   
+                </div>
+                <p>Our dedicated team is committed to connecting you to the future<br>
+                keeping you ahead  of the curve with latest in computing<br>
+            technology. Whether you're a gaming enthusiast, professional in need of reliable hardware<br>
+        or simply seeking  tech-savvy advice. Explore our range of products and let us be your
+        in navigating the ever-evolving landscape of tech.</p>
+            </div>
+            <div class="sections">
+                <h3>Follow Us</h3>
+            Email us at
+             <p1><br>Author:Deep Web Tech Com
+                <p><a href="mailto:someone@example.com">paballopule4@gmail.com</a></p>
+           <div style="transform: translate 140px,300px;"></div>
+              <a href="https://wa.me/266 62260503  ?text=hey">Whatsapp</a></p>
+          
+                <img src="images/twitter.png" alt="Twitter" class="social-icon"></a>
+               <img src="images/facebook.png" alt="Facebook" class="social-icon"></a>
+             <img src="images/instagram.jpeg" alt="Instagram" class="social-icon"></a>
+               <img src="images/YouTube.png" alt="YouTube" class="social-icon" width="300" height="300"></a>
+               <img src="images/tiktok.webp" alt="tiktok" class="social-icon"></a>
+               <img src="images/whatsapp.jpeg" alt="whatsapp"  class="social-icon" ></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            
+            <p>©2024 Deep Web Tech Com | All rights reserved | Terms of service</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

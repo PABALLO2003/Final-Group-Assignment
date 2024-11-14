@@ -1,0 +1,166 @@
+body {
+   background-color:#d2ebe9;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+}
+header {
+    background-color: #0a9f90; 
+    padding: 20px; 
+    font-size:large;
+    font-family:italic,tahoma;
+    text-align: center;
+}
+a ul li {
+    display: inline;
+    margin-right: 20px;
+    background-color: rgb(13, 13, 211);
+  }
+  
+  nav a {
+    color: rgb(1, 1, 2);
+    text-decoration: none;
+    font-size: xx-large;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: auto;
+    background-color: #3f0707;
+}
+
+.logo a {
+    font-size: 1.8rem; 
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none; 
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color:black; 
+    text-decoration: none; 
+    font-size: 1rem; 
+    transition: color 0.3s; 
+    padding: 40px;
+}
+.nav-links a:hover {
+    color: #0c33a8; 
+}
+
+.nav-actions {
+    display: flex; 
+}
+
+.nav-button {
+    background-color: #ffdd57; 
+    color: #ae4444; 
+    padding: 10px 15px; 
+    border-radius: 25px;
+    text-decoration: none; 
+    display: inline-block; 
+    margin-left: 10px; 
+    transition: background-color 0.3s; 
+}
+
+.nav-button:hover {
+    background-color: #240896; 
+    font-size: larger;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+.service {
+    border: 10px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+footer {
+    padding: 3px ;
+  background-color:#b3c2c0;
+    color: rgb(10, 5, 5);
+    text-align: center;
+    font-size: large;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.footer p{
+    font-size: larger;
+}
+.footer .footer-content {
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+    margin-bottom: 10px; 
+    padding: 10PX;
+}
+
+.main-sponsor, .partners, .social-media {
+    flex: 1 1 30%; 
+    margin: 10px;
+}
+
+.sponsor-logo {
+    width: 200px; 
+    height: auto;
+}
+
+.partner-logos {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.partner-logo {
+    width: 100px;
+    height: auto; 
+    margin: 10px; 
+    transition: transform 0.3s; 
+}
+
+.partner-logo:hover {
+    transform: scale(1.1); 
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-icon {
+    width: 40px;
+    height: auto; 
+    margin: 0 10px;
+    transition: transform 0.3s; 
+}
+
+.social-icon:hover {
+    transform: scale(1.1); 
+}
+
+.footer-bottom {
+    margin-top: 20px; 
+    font-size: 0.9rem; 
+}

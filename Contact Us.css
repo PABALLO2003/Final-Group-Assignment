@@ -1,0 +1,251 @@
+body{
+    background-color: #d2ebe9;
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: #0a9f90; 
+    padding:20px ; 
+    font-size: small;
+    font-family:italic,tahoma;
+    text-align: center;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(images/pngtree-futuristic-data-analytics-dashboard-image_16012317.jpg) no-repeat center/cover ;
+}
+
+.container form{
+    width: 670px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background: rgb(255, 255, 255, 0.1);
+ background-color: #bfdcd9;
+    flex-wrap: wrap;
+}
+
+.container form h1{
+    color: #0f0aa0;
+    font-weight: 700;
+    line-height: 2;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.container form input{
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #03a592;
+}
+a ul li {
+    display: inline;
+    margin-right: 20px;
+    background-color: rgb(13, 13, 211);
+  }
+  
+  nav a {
+    color: rgb(1, 1, 2);
+    text-decoration: none;
+    font-size: xx-large;
+    padding: 20px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: auto;
+    background-color: #3f0707;
+}
+
+.logo a {
+    font-size: 1.8rem; 
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none; 
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color:black; 
+    text-decoration: none; 
+    font-size: 1rem; 
+    transition: color 0.3s; 
+    padding: 40px;
+}
+.nav-links a:hover {
+    color: #0c33a8; 
+}
+
+.nav-actions {
+    display: flex; 
+}
+
+.nav-button {
+    background-color: #ffdd57; 
+    color: #ae4444; 
+    padding: 10px 15px; 
+    border-radius: 25px;
+    text-decoration: none; 
+    display: inline-block; 
+    margin-left: 10px; 
+    transition: background-color 0.3s; 
+}
+
+.nav-button:hover {
+    background-color: #240896; 
+    font-size: larger;
+}
+
+
+
+.container form input::placeholder{
+    color: #0d0e0e;
+}
+
+.container form #lastname,
+.containerform #mobile number{
+    margin-left: 20px;
+}
+
+.container form h4{
+    color: #161818;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.container form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #098e89;
+    color: #092a7d;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    min-height: 90px;
+    max-height: 90px;
+    min-width: 620px;
+    max-width: 620px;
+}
+
+.container form h4{
+    font-size: 20px;
+}
+
+.container form #button{
+    border: none;
+    background: #0c90b0;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000;
+    width: 200px;
+    height: 60px;
+    padding: 0;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.container form #button:hover{
+    background: blue;
+    color: black;
+    transition: .5s ease-in-out;
+}
+.footer {
+    padding: 10px ;
+  background-color:#b3c2c0; 
+    color: rgb(10, 5, 5); 
+    text-align: center;
+    font-size: large;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.footer p{
+    font-size: larger;
+}
+.footer .footer-content {
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
+}
+
+.main-sponsor, .partners, .social-media {
+    flex: 1 1 30%; 
+    margin: 10px;
+}
+
+.sponsor-logo {
+    width: 200px; 
+    height: auto; 
+}
+
+.partner-logos {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.partner-logo {
+    width: 100px; 
+    height: auto; 
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.partner-logo:hover {
+    transform: scale(1.1); 
+}
+
+.social-media {
+    text-align: center; 
+}
+
+.social-icon {
+    width: 40px; 
+    height: auto; 
+    margin: 0 10px; 
+    transition: transform 0.3s; 
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 20px; 
+    font-size: 0.9rem;
+}

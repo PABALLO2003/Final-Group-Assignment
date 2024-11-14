@@ -1,0 +1,179 @@
+/* Global Styles */
+body {
+    background-color: #d2ebe9;
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color:  #0a9f90;
+    padding: 1px;
+    font-size: small;
+    font-family: italic, tahoma;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: xx-large;
+}
+
+nav a {
+    color: rgb(1, 1, 2);
+    text-decoration: none;
+    font-size: large;
+    padding: 20px;
+}
+.nav-links a:hover {
+    color: #0c33a8; 
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Booking Section Styles */
+.booking-container {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+h2 {
+    color: #343a40;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.booking-form label {
+    font-size: 1.1em;
+    color: #495057;
+    text-align: left;
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: white;
+}
+
+.booking-form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: 0.3s, transform 0.3s;
+}
+
+.booking-form button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Additional Fix: Ensure no inherited styles */
+.container {
+    background-color: transparent; /* Remove inherited background color */
+    padding: 20px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 2.5em;
+    color: black;
+}
+.footer-content {
+    padding: 3px ;
+  background-color:#b3c2c0;
+    color: rgb(10, 5, 5);
+    text-align: center;
+    font-size: large;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.footer p{
+    font-size: larger;
+}
+.footer .footer-content {
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+    margin-bottom: 10px; 
+    padding: 10PX;
+}
+
+.main-sponsor, .partners, .social-media {
+    flex: 1 1 30%; 
+    margin: 10px;
+}
+
+.sponsor-logo {
+    width: 200px; 
+    height: auto;
+}
+
+.partner-logos {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.partner-logo {
+    width: 100px;
+    height: auto; 
+    margin: 10px; 
+    transition: transform 0.3s; 
+}
+
+.partner-logo:hover {
+    transform: scale(1.1); 
+
+}
+
+.social-media {
+    text-align: center;
+}
+.class .partners
+.social-icon {
+    width: 40px;
+    height: auto; 
+    margin: 0 10px;
+    transition: transform 0.3s; 
+}
+
+.social-icon:hover {
+    transform: scale(1.1); 
+}
+
+.footer-bottom {
+    margin-top: 20px; 
+    font-size: 0.9rem; 
+}

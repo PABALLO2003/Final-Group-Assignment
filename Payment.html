@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Web Tech Com</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<style>body 
+{
+    background-color: #d2ebe9;
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: #0a9f90; 
+    padding:1px ; 
+    font-size: small;
+    font-family:italic,tahoma;
+    text-align: center;
+}
+
+.h1{
+    text-align: center;
+}
+a ul li {
+    display: inline;
+    margin-right: 20px;
+    background-color: blue;
+    text-align: center;
+  }
+  
+  nav a {
+    color: rgb(11, 11, 16);
+    text-decoration: none;
+    text-align: center;
+    padding: 25px;
+    font-size: xx-large;
+   
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+
+
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: auto;
+    background-color: #3f0707;
+}
+
+.payment-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-section h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.payment-section label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1rem;
+}
+
+.payment-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#pay-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+#pay-button:hover {
+    background-color: #218838;
+}
+
+#payment-message {
+    text-align: center;
+    font-size: 1rem;
+    color: #ff0000;
+    margin-top: 10px;
+}
+
+.footer {
+    padding: 5px ;
+  background-color: #b3c2c0; 
+    color: rgb(10, 5, 5); 
+    text-align: center;
+    font-size: large;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.footer p{
+    font-size: larger;
+    margin-bottom: auto;
+    text-align: center;
+}
+.footer .footer-content {
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+    margin-bottom: 20px; 
+}
+
+.main-sponsor, .partners, .social-media {
+    flex: 1 1 30%; 
+    margin: 10px;
+}
+
+.sponsor-logo {
+    width: 200px; 
+    height: auto; 
+}
+
+.partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partner-logo {
+    width: 100px; 
+    height: auto; 
+    margin: 10px; 
+    transition: transform 0.3s; 
+}
+
+.partner-logo:hover {
+    transform: scale(1.1); 
+}
+
+.social-media {
+    text-align: center; 
+}
+
+.social-icon {
+    width: 40px; 
+    height: auto; 
+    margin: 0 10px;
+    transition: transform 0.3s; 
+}
+
+.social-icon:hover {
+    transform: scale(1.1); 
+}
+
+.footer-bottom {
+    margin-top: 20px; 
+    font-size: 0.9rem; 
+}
+</style>
+
+<body>
+    <header>
+        <nav>
+        
+            <class="nav-links">
+                <nav>
+                    <ul>
+                    <a href="Store.html">Store</a>
+                    <a href="payment.html">Payment</a>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div class="payment-section">
+                <h3>Payment Information</h3>
+                <form id="payment-form">
+                    <label for="card-name">Cardholder Name:</label>
+                    <input type="text" id="card-name" placeholder="Cardholder Name" required>
+            
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" placeholder="Card Number" required>
+            
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="text" id="expiry-date" placeholder="MM/YY" required>
+            
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" placeholder="CVV" required>
+            
+                    <button type="submit" id="pay-button">Pay Now</button>
+                </form>
+                <div id="payment-message"></div>
+            </div>
+
+            <script>
+                document.getElementById("payment-form").addEventListener("submit", function(event) {
+                    event.preventDefault();  // Prevents the default form submission behavior
+        
+                    const cardName = document.getElementById("card-name").value;
+                    const cardNumber = document.getElementById("card-number").value;
+                    const expiryDate = document.getElementById("expiry-date").value;
+                    const cvv = document.getElementById("cvv").value;
+        
+                    // Simulate a payment processing check
+                    if (cardName && cardNumber && expiryDate && cvv) {
+                        document.getElementById("payment-message").innerText = "Payment processed successfully! Thank you for your purchase.";
+                        document.getElementById("payment-message").style.color = "green";
+                        // You can redirect to a confirmation page or clear the cart here
+                    } else {
+                        document.getElementById("payment-message").innerText = "Please fill in all fields correctly.";
+                    }
+                });
+            </script>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    
+                    <div class="partners">
+                        <h3>Our Partners</h3>
+                        <div class="partner-logos">
+                            <img src="images/Microsoft-Logo.wine.png" alt="Microsoft-Logo.wine" class="partner-logo">
+                            <img src="images/Xbox_logo.svg" alt="Xbox_logo" class="partner-logo">
+                            <img src="images/dell.png" alt="dellvidia Logo" class="partner-logo">
+                            <img src="images/playstation-3.svg" alt="PlayStation-3" class="partner-logo">
+                            <img src="images/lenovo.png" alt="lenovo" class="partner-logo">
+                            <img src="images/hp.png" alt="hp" class="partner-logo">
+                            <img src="images/amd.jpg" alt="amd" class="partner-logo">
+                           
+            
+                           
+                        </div>
+                        <p>Our dedicated team is committed to connecting you to the future<br>
+                        keeping you ahead  of the curve with latest in computing<br>
+                    technology. Whether you're a gaming enthusiast, professional in need of reliable hardware<br>
+                or simply seeking  tech-savvy advice. Explore our range of products and let us be your
+                in navigating the ever-evolving landscape of tech.</p>
+                    </div>
+                    <div class="sections">
+                        <h3>Follow Us</h3>
+                    Email us at
+                     <p1><br>Author:Deep Web Tech Com
+                        <p><a href="mailto:someone@example.com">paballopule4@gmail.com</a></p>
+                   <div style="transform: translate(140px,300px);"></div>
+                      <a href="https://wa.me/266 62260503  ?text=hey">Whatsapp</a></p>
+                  
+                        <img src="images/twitter.png" alt="Twitter" class="social-icon"></a>
+                       <img src="images/facebook.png" alt="Facebook" class="social-icon"></a>
+                     <img src="images/instagram.jpeg" alt="Instagram" class="social-icon"></a>
+                       <img src="images/YouTube.png" alt="YouTube" class="social-icon" width="300" height="300"></a>
+                       <img src="images/tiktok.webp" alt="tiktok" class="social-icon"></a>
+                       <img src="images/whatsapp.jpeg" alt="whatsapp"  class="social-icon" ></a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    
+                    <p>©2024 Deep Web Tech Com | All rights reserved | Terms of service</p>
+                </div>
+            </footer>
+            
+            
+    
+</body>
+</html>
